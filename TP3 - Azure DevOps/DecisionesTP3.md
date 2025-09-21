@@ -52,40 +52,40 @@ Elegí Agile porque es el proceso recomendado para equipos que trabajan con Scru
 - Version Control: repositorios Git.
 - Metodología de trabajo: Agile.
 
-![nuevo_proyecto.png](Screens/img_1.png)
+![nuevo_proyecto.png](ScreensTP3/img_1.png)
 
 ### Equipos y áreas:
 Configuré el equipo principal por defecto y lo mantuve como único equipo, ya que el proyecto es pequeño. En Project Settings > Teams, me aseguro de que haya al menos un equipo principal (TP3_IS3 Team) y en Project Settings > Project configuration, configuro las áreas que me parecen imprescindibles (backend, frontend y QA).
 
->![teams.png](Screens/img_2.png)
+>![teams.png](ScreensTP3/img_2.png)
 
->![areas.png](Screens/img_3.png)
+>![areas.png](ScreensTP3/img_3.png)
 
 ## 2. Gestión del trabajo con Azure Boards
 
 ### Estructura de work items:
 - 1 Epic: "Módulo de Gestión de Usuarios" asociado a área Backend del proyecto.
 
-![epic.png](Screens/img_5.png)
+![epic.png](ScreensTP3/img_5.png)
 
 - 3 User Stories: Registro, Login, Edición de Perfil (las creamos utilizando Related Work dentro del Epic para asociarlas más rápido, con un tipo de link Child).
 
-![related_work.png](Screens/img_6.png)
+![related_work.png](ScreensTP3/img_6.png)
 
-![tipo_link.png](Screens/img_10.png)
+![tipo_link.png](ScreensTP3/img_10.png)
 
 >**US01**
-![US01.png](Screens/img_7.png)
+![US01.png](ScreensTP3/img_7.png)
 
 >**US02**
-![US02.png](Screens/img_8.png)
+![US02.png](ScreensTP3/img_8.png)
 
 >**US03**
-![US03.png](Screens/img_9.png)
+![US03.png](ScreensTP3/img_9.png)
 
 >**Así queda el Epic con sus User Stories:**
 >
-> ![epic_US.png](Screens/img_11.png)
+> ![epic_US.png](ScreensTP3/img_11.png)
 
 NOTA: En los screens me olvidé de asignar responsable (en este caso yo) y clasificación (Business o Architectural) a los WorkItems, pero SÍ lo hice.
 
@@ -94,40 +94,40 @@ NOTA: En los screens me olvidé de asignar responsable (en este caso yo) y clasi
 >**US01**: Registro de usuarios.
 >
 > Task1:
->![t1US1.png](Screens/img_12.png)
+>![t1US1.png](ScreensTP3/img_12.png)
 >
 > Task2:
->![t2US1.png](Screens/img_14.png)
+>![t2US1.png](ScreensTP3/img_14.png)
 
 >**US02**: Login de usuarios.
 >
 > Task1:
-> ![t1US2.png](Screens/img_15.png)
+> ![t1US2.png](ScreensTP3/img_15.png)
 > Task2:
-> ![t2US2.png](Screens/img_16.png)
+> ![t2US2.png](ScreensTP3/img_16.png)
 
 >**US03**: Edición de perfil.
 >
 > Task1:
-> ![t1US3.png](Screens/img_17.png)
+> ![t1US3.png](ScreensTP3/img_17.png)
 > Task2:
-> ![t2US3.png](Screens/img_18.png)
+> ![t2US3.png](ScreensTP3/img_18.png)
 
 - 2 Bugs de ejemplo.
 
 > Bug en Task1 de US2 (Endpoint autenticación)
-> ![b1t1US2.png](Screens/img_19.png)
+> ![b1t1US2.png](ScreensTP3/img_19.png)
 
 > Bug en
-> ![b2t2US3.png](Screens/img_20.png)
+> ![b2t2US3.png](ScreensTP3/img_20.png)
 
 ### Work Items hasta ahora:
-![work_items.png](Screens/img_21.png)
+![work_items.png](ScreensTP3/img_21.png)
 
 ### Sprint:
 - Primero que nada, en Project Configuration establezco los nombres correspondientes (Sprint 1, 2 y 3) y las duraciones (2 semanas todos) para poder asignar con el sprint bien configurado.
-  ![config_sprint.png](Screens/img_22.png)
-  ![sprints.png](Screens/img_23.png)
+  ![config_sprint.png](ScreensTP3/img_22.png)
+  ![sprints.png](ScreensTP3/img_23.png)
 
 - Ahora asigno todos los Work Items al Sprint 1: estas 2 semanas nos permite planificar entregables cortos y medibles.
 
@@ -137,15 +137,15 @@ NOTA: En los screens me olvidé de asignar responsable (en este caso yo) y clasi
 
   Procedo a ir a Backlog y a asignar las UserStories y el Epic al Sprint 1
 
-![USasignadas.png](Screens/img_24.png)
+![USasignadas.png](ScreensTP3/img_24.png)
 
-![epicasignado.png](Screens/img_25.png)
+![epicasignado.png](ScreensTP3/img_25.png)
 
 ### Organizo mi Kanban
 
-![kanbanEpic.png](Screens/img_26.png)
+![kanbanEpic.png](ScreensTP3/img_26.png)
 
-![kanbanUS.png](Screens/img_27.png)
+![kanbanUS.png](ScreensTP3/img_27.png)
 
 ### Justificación:
 Esta estructura jerárquica facilita la trazabilidad: cada Task se asocia a una User Story y esta a su Epic (y los Bugs a las Tasks). Esto permite ver claramente el progreso en el tablero Kanban.
@@ -155,9 +155,9 @@ Esta estructura jerárquica facilita la trazabilidad: cada Task se asocia a una 
 ### Repositorio:
 Importé el proyecto de ejemplo desde GitHub (SimpleWebAPI).
 
-![importacion_codigo.png](Screens/img_28.png)
+![importacion_codigo.png](ScreensTP3/img_28.png)
 
-![img_29.png](Screens/img_29.png)
+![img_29.png](ScreensTP3/img_29.png)
 
 ### Políticas de calidad:
 En **Repos > Branches > main > Branch policies** activó lo siguiente:
@@ -168,42 +168,42 @@ En **Repos > Branches > main > Branch policies** activó lo siguiente:
 
 ✔ Check for comment resolution
 
-![branch_policy.png](Screens/img_30.png)
+![branch_policy.png](ScreensTP3/img_30.png)
 
 ### Flujo de trabajo:
 - Creé ramas feature/registro y feature/login: también les asocié work items según corresponda a cada caso.
-  ![rama_registro.png](Screens/img_31.png)
+  ![rama_registro.png](ScreensTP3/img_31.png)
 
-![rama_login.png](Screens/img_32.png)
+![rama_login.png](ScreensTP3/img_32.png)
 
 - Hice commits atómicos en cada rama:
-  ![commit_registro.png](Screens/img_33.png)
+  ![commit_registro.png](ScreensTP3/img_33.png)
 
-![commit_login.png](Screens/img_34.png)
+![commit_login.png](ScreensTP3/img_34.png)
 
 - Generé Pull Requests y los aprobé para merge a main.
 
 >PULL REQUEST 1:
 >
-> ![PR_registro.png](Screens/img_35.png)
+> ![PR_registro.png](ScreensTP3/img_35.png)
 >
 > - Para aprobarlo debo ir y modificar la política de la branch Main para que permita que el mismo autor del Pull Request apruebe el cambio o merge. Si no, espera a un reviewer aparte del autor para dar su aprobación.
 >
-> ![Aprobacion1.png](Screens/img_36.png)
+> ![Aprobacion1.png](ScreensTP3/img_36.png)
 >
 > - Procedo a completar el Pull Request:
 >
-> ![completoPR1.png](Screens/img_37.png)
+> ![completoPR1.png](ScreensTP3/img_37.png)
 
 >PULL REQUEST 2 (hago exactamente lo mismo):
 >
 > - Apruebo Pull Request:
 >
-> ![Aprobacion2.png](Screens/img_38.png)
+> ![Aprobacion2.png](ScreensTP3/img_38.png)
 >
 > - Completo Pull Request:
 >
-> ![completoPR2.png](Screens/img_39.png)
+> ![completoPR2.png](ScreensTP3/img_39.png)
 
 
 ### Justificación:
